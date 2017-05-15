@@ -3,6 +3,10 @@
 	src: url('fonts/Gotham-XLight.otf');
 }
 
+.main-container {
+	height : 2000px !important;
+}
+
 .portfolio-header {
   position: relative;
   background-image: url(images/header.png);
@@ -15,6 +19,8 @@
   background-color : rgb(4, 47, 109);
   box-shadow : 0 0 0 0;
   height : 100px;
+  margin-top : 50px;
+  margin-bottom : 50px;
 }
 
 
@@ -150,6 +156,7 @@ img.article-image {
 footer {
 	position : relative;
   	background-image: url(images/footer.png);
+	top : 100%;
 	height : 70px;
 }
 
@@ -172,5 +179,35 @@ footer {
   background-image : url(images/zip.png);
   background-repeat: no-repeat;
   background-color : transparent;
+  height : 110px;
+  margin-bottom : 50px;
 }
 
+.input-image2 {
+  background-image : url(images/category.png);
+  background-repeat: no-repeat;
+  background-color : transparent;
+  height : 110px;
+  margin-bottom : 50px;
+}
+
+.zipinput {
+	margin-top : 50px;
+	margin-left : 70px;
+	color : gray;
+	border-bottom : none !important;
+}
+
+.categoryselect {
+	margin-top : 30px;
+	margin-left : 70px;
+	color : gray;
+}
+
+.categoryselect1 {
+	border-bottom : none !important;
+}
+
+.find_a_lawyer {
+	margin-right : 200px;
+}

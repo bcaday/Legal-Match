@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -37,21 +40,91 @@
             <div class="mdl-layout__header-row portfolio-logo-row">
             </div>
         </header>
-        <main class="mdl-layout__content main-body">
-			<div class="mdl-grid ">
-				<div class="mdl-cell mdl-cell--12-col inner-container">
-					<div class="mdl-layout__header second-header portfolio-header2">
-					</div>
-				</div>
-				<div class="mdl-cell mdl-cell--6-col">
-					<div class="mdl-layout__header second-header input-image1">
-					</div>
-				</div>
+        <main class="mdl-layout__content main-body main-container">
+		<div class="mdl-grid ">
+			<div class="mdl-layout__header second-header portfolio-header2">
 			</div>
-            <footer class="mdl-mini-footer">
-            </footer>
+		</div>
+		<div class="mdl-layout__header second-header input-image1 mdl-cell--5-col">
+			<input type="text" class="mdl-textfield__input zipinput" placeholder="Does not have to be where you live"/>
+		</div>
+		<div class="mdl-layout__header second-header input-image2 mdl-cell--5-col">
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fullwidth categoryselect">
+				<input class="categoryselect1 mdl-textfield__input" type="text" id="sample1" readonly tabIndex="-1">
+				<label for="sample1" class=" mdl-textfield__label">Click to choose a legal category</label>
+				<ul for="sample1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+					<li class="mdl-menu__item" data-toggle="modal" data-target="#myModal1">Family</li>
+					<li class="mdl-menu__item" data-toggle="modal" data-target="#myModal2">Criminal Defense</li>
+					<li class="mdl-menu__item" data-toggle="modal" data-target="#myModal3">Business</li>
+					<li class="mdl-menu__item" data-toggle="modal" data-target="#myModal4">Personal Injury</li>
+					<li class="mdl-menu__item" data-toggle="modal" data-target="#myModal5">Bankruptcy & Finances</li>
+					<li class="mdl-menu__item" data-toggle="modal" data-target="#myModal6">Products & Services</li>
+					<li class="mdl-menu__item" data-toggle="modal" data-target="#myModal7">Employment</li>
+					<li class="mdl-menu__item" data-toggle="modal" data-target="#myModal8">Real Estate</li>
+					<li class="mdl-menu__item" data-toggle="modal" data-target="#myModal9">Immigration</li>
+					<li class="mdl-menu__item" data-toggle="modal" data-target="#myModal10">Wills, Trusts & Estates</li>
+					<li class="mdl-menu__item" data-toggle="modal" data-target="#myModal11">Government</li>
+					<li class="mdl-menu__item" data-toggle="modal" data-target="#myModal12">Intellectual Property</li>
+				</ul>
+			</div>
+		</div>
+            	<footer class="mdl-mini-footer">
+            	</footer>
         </main>
     </div>
+
+	<div class="modal fade" id="myModal1" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Which Family Law issue(s) apply to your case?</h4>
+				</div>
+				<div class="modal-body">
+					<table class="table table-condensed">
+						<tr>
+							<td>
+								<input type="checkbox" /> Adoptions
+							<td>
+							<td>
+								<input type="checkbox" /> Child Support
+							<td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" /> Guardianship
+							<td>
+							<td>
+								<input type="checkbox" /> Separations
+							<td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" /> Child Custody and Visitation
+							<td>
+							<td>
+								<input type="checkbox" /> Divorce
+							<td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" /> Paternity
+							<td>
+							<td>
+								<input type="checkbox" /> Spousal Support or Alimony
+							<td>
+						</tr>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary find_a_lawyer">FIND A LAWYER NOW</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </body>
 
